@@ -1,0 +1,17 @@
+<div class="profile-wrap">
+    {{ with .Params.profileImage }}
+      {{ $img := replaceRE "^/" "" . }}
+      <img src="{{ $img | relURL }}" alt="Portrait of {{ $.Params.name }}" class="profile-pic">
+    {{ end }}
+    <p class="eyebrow">CONTROL SYSTEMS · INTEGRATION · CONSULTING</p>
+    <h1>{{ .Params.name }}</h1>
+    <p class="profile-description">{{ .Params.description }}</p>
+    <p class="profile-subtitle">{{ .Params.subtitle }}</p>
+    <nav class="social-icons" aria-label="Social links">
+      {{ range .Params.socials }}
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .label }}" title="{{ .label }}">
+          <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      {{ end }}
+    </nav>
+</div>

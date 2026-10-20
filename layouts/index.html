@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+<body>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <main class="container mx-auto px-5 py-10 sm:py-16 max-w-xl">
+        <section class="profile-panel">
+            {{ partial "profile.html" . }}
+        </section>
+
+        <div class="section-label" aria-hidden="true"><span>CONNECT &amp; LEARN</span></div>
+        {{ partial "link-card.html" . }}
+        {{ partial "about.html" . }}
+
+        <footer class="site-footer">
+            <span>© {{ now.Year }} KAUNG KHANT KO KO HAN</span>
+            <span class="footer-mark">◆</span>
+            <span>Control · Integration · Consulting</span>
+        </footer>
+    </main>
+</body>
+</html>

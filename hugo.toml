@@ -1,0 +1,11 @@
+baseURL      = "https://kaung-khant-ko-ko-han.github.io/"
+languageCode = "en-us"
+title        = "KAUNG KHANT KO KO HAN"
+minVersion   = "0.115.0"
+enableRobotsTXT = true
+
+[params]
+  description = "Control System Engineer | System Integrator | Consulting"
+
+[outputs]
+  home = ["HTML"]
